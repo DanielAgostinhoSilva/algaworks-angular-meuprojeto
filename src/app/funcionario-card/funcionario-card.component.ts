@@ -16,4 +16,10 @@ export class FuncionarioCardComponent{
   // @ts-ignore
   @Input() funcionario: {id: number, nome: string};
 
+  getEstilosCartao(): any {
+    return {
+      'border-width.px' : this.funcionario.id,
+      backgroundColor : this.funcionario.id % 2 === 0 ? 'lightblue' : 'lightgreen'
+    };
+  }
 }
