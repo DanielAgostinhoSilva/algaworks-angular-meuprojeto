@@ -3,8 +3,7 @@ import {Component, EventEmitter, Output} from '@angular/core';
 @Component({
   selector: 'app-funcionario-form',
   templateUrl: './funcionario-form.component.html',
-  styles: [
-  ]
+  styleUrls: ['./funcionario-form.component.css']
 })
 export class FuncionarioFormComponent  {
 
